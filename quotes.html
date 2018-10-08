@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="quotes.css">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container" style="color:white; height:250px;">
+      <h1 id="quotes" class="unselectable col-md-12">Click the button to generate a random Quotes - <span style="color:pink">Lester</span></h1>
+    </div>
+    <div class="container" style="text-align:center;">
+      <button type="button" name="changeQuotes" onclick="myQuotes()" class="unselectable btn-hover color-10">Change</button>
+    </div>
+    
+  </body>
+</html>
+<script type="text/javascript">
+  var outputQuotes, quotesList = ["“Let us study things that are no more. It is necessary to understand them, if only to avoid them.” ",
+    "I want to feel your scent, taste, and skin tonight and each night we are together.",
+    "My ideal body weight is yours on mine, you are my dream.",
+    "I love the way you explore my body using your hands and the way you call me your girl.",
+    "Butterflies in the stomach? I don’t feel them because when you kiss me, I feel the whole zoo in my body.",
+    "You are an ideal woman! You are a cold queen in public and in private, you become my little naughty girl.",
+    "I am crazy about you! You are in my heart, in my soul and in my inappropriate thoughts.",
+    "I get horny each time I see your beautiful eyes, seducing lips, and an amazing body. You are the only woman whom I will never get tired of loving.",
+    "Sexuality is something you can’t acquire. A woman is either born with it or not. You are the embodiment of sensuality for me.",
+    "I get horny each time I see you and it’s your fault because you are extremely sexy!"];
+  function myQuotes(){
+    document.getElementById('quotes').innerHTML = quotesList[Math.floor(Math.random()*10)];
+  }
+</script>
